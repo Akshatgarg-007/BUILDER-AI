@@ -81,7 +81,7 @@ const AuthPage = ({ mode }) => {
 
               <div className='relative'>
                 <input type={showPassword ? "text" : "password"} value={password} onChange={(e) => setPassword(e.target.value)} required className='w-full pl-2 py-2 border-b border-zinc-200 focus:outline-none  focus:border-zinc-950 text-sm text-zinc-900 bg-transparent placeholder-zinc-300 transition-colors' placeholder='••••••••' />
-                <button type='button' onClick={() => setShowPassword(!showPassword)} className='absolute right-2 top-1/2 -translate-y-1/2 -translate-y-1/2 text-zinc-300 hover:text-zinc-600 flex items-center justify-center cursor-pointer transition-colors'>
+                <button type='button' onClick={() => setShowPassword(!showPassword)} className='absolute right-2 top-1/2 -translate-y-1/2 text-zinc-300 hover:text-zinc-600 flex items-center justify-center cursor-pointer transition-colors'>
                   {showPassword ? <EyeOffIcon size={14}/> : <EyeIcon size={14}/>}
                 </button>
               </div>
